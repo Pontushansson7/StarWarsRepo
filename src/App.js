@@ -1,25 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
+import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-''          Edit <code>src/App.js</code> and save to reload. asfa
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router basename="/starwarsapp/">
+      <div className="App">
+      <NavLink to="/characters" activeClassName="FormTitle__Link--Active" className="FormTitle__Link">Home</NavLink>
+      </div>
+    </Router>
   );
 }
 
