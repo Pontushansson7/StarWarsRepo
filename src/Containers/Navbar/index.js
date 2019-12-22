@@ -8,7 +8,9 @@ class Navbar extends Component {
         <div>
           <div className="line"></div>
           <ul>
-            <li className="goLeft"><NavLink to="/home">Home</NavLink></li>
+            <li className="goLeft"><NavLink to="/">Home</NavLink></li>
+            <li className="goRight1"><NavLink to="/characters">Karaktärer</NavLink></li>
+            <li className="goRight2"><NavLink to="/planets">Planeter</NavLink> </li>
           </ul>
           <div className="line"></div>
         </div>
